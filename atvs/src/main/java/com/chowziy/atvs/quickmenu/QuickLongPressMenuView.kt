@@ -16,6 +16,8 @@ class QuickLongPressMenuView @JvmOverloads constructor(
 
     private var items = mutableListOf<QuickPopupMenu.MenuItem>()
 
+    private var quickPopupMenu: QuickPopupMenu? = null
+
     private var menuConfig = QuickPopupMenu.MenuConfig(
         iconPosition = QuickPopupMenu.MenuConfig.IconPosition.LEFT,
         titleWidth = 0, // 默认不限制标题宽度
@@ -29,15 +31,17 @@ class QuickLongPressMenuView @JvmOverloads constructor(
     }
 
     private fun showPopupMenu() {
-        QuickPopupMenu(context, items, menuConfig)
-            .showAtLocation(
-                this@QuickLongPressMenuView,
-                touchX.toInt(),
-                touchY.toInt(),
-                xOffset = -100,
-                yOffset = 100
+        if (quickPopupMenu == null) {
+            quickPopupMenu = QuickPopupMenu(context, items, menuConfig)
+        }
 
-            )
+        quickPopupMenu?.showAtLocation(
+            this@QuickLongPressMenuView,
+            touchX.toInt(),
+            touchY.toInt(),
+            xOffset = -100,
+            yOffset = 100
+        )
     }
 
     fun setMenuItems(menuItems: List<QuickPopupMenu.MenuItem>) {
