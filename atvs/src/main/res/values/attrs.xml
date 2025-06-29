@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FadeEdgeView">
+        <attr name="edge_position" format="flags">
+            <flag name="top" value="1" />
+            <flag name="bottom" value="2" />
+            <flag name="left" value="4" />
+            <flag name="right" value="8" />
+            <flag name="all" value="16" />
+        </attr>
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_gradient_color" format="color" />
+    </declare-styleable>
+</resources>
