@@ -17,13 +17,21 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/black">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示"
-                android:textSize="18sp"
-                android:textColor="#333" />
+
+            <com.chowziy.atvs.quickmenu.QuickLongPressMenuView
+                android:id="@+id/long_press_menu_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/demo_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示自定义渐变边缘View演示"
+                    android:textSize="18sp"
+                    android:textColor="#333" />
+
+            </com.chowziy.atvs.quickmenu.QuickLongPressMenuView>
         </ScrollView>
     </com.chowziy.atvs.FadeEdgeView>
 
