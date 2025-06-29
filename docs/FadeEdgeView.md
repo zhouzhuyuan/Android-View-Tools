@@ -27,6 +27,10 @@ FadeEdgeView 是一个支持四边渐变遮罩效果的自定义 FrameLayout，�
 </com.chowziy.atvs.FadeEdgeView>
 ```
 
+## 效果截图
+
+![FadeEdgeView 效果演示](./assets/img.png)
+
 ## 效果说明
 
 - 渐变区域会覆盖在指定边缘，内容可滑动。
